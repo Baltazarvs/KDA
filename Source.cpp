@@ -1,3 +1,5 @@
+// Created by Baltazarus
+
 #include "Utilities.h"
 #include "resource.h"
 
