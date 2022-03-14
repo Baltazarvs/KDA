@@ -1,6 +1,6 @@
 #include "resource.h"
 
-CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "RandomPicker.exe.manifest"
+CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "KDAR.exe.manifest"
 
 // Insert Item Dialog
 IDD_INSERT_ITEM DIALOGEX 0, 0, 271, 28
