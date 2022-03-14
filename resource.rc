@@ -2,40 +2,23 @@
 
 CREATEPROCESS_MANIFEST_RESOURCE_ID RT_MANIFEST "KDAR.exe.manifest"
 
-// Insert Item Dialog
-IDD_INSERT_ITEM DIALOGEX 0, 0, 271, 28
-STYLE 0x40L | 0x80L | 0x0008L | 0x80000000L | 0x00C00000L | 0x00080000L
-CAPTION "Insert Item"
-FONT 8, "MS Shell Dlg", 400, 0, 0x1
-BEGIN
-    DEFPUSHBUTTON   "OK", 1, 161, 7, 50, 14
-    PUSHBUTTON      "Cancel", 2, 214, 7, 50, 14
-    EDITTEXT        IDC_EDIT_ITEMTEXT, 7, 7, 152, 14, 0x0080L
-END
-
-// Menu Bar
 IDR_MENUBAR MENU
 BEGIN
-    POPUP "Item"
-    BEGIN
-        MENUITEM "Insert",                      ID_ITEM_INSERT
-        MENUITEM "Load From File",              ID_ITEM_LOAD_FROM_FILE
-        MENUITEM "Clear List",                  ID_ITEM_CLEARLIST
-        MENUITEM SEPARATOR
-        MENUITEM "Exit",                        ID_ITEM_EXIT
-    END
-	POPUP "&Help"
+	POPUP "&Menu"
 	BEGIN
-		MENUITEM "About", 						ID_HELP_ABOUT
+		MENUITEM "Usa&ge Info", ID_HELP_USAGE_INFO
+		MENUITEM "A&bout", ID_HELP_ABOUT
+		MENUITEM SEPARATOR
+		MENUITEM "&Quit", ID_MENU_EXIT
+		MENUITEM "About", ID_HELP_ABOUT
 	END
 END
 
-// About Dialog Box
-IDD_ABOUT DIALOG DISCARDABLE 20, 20, 200, 65
+IDD_ABOUT DIALOG DISCARDABLE 20, 20, 200, 90
 CAPTION "About"
 STYLE 0x80L | 0x00080000L | 0x00C00000L | 0x80000000L
 FONT 10, "Arial"
 BEGIN
-	DEFPUSHBUTTON "&OK", 1, 80, 40, 40, 15
-	CTEXT "Created 2021 by Baltazarus.\nUse this program to calculate your\nK/D or K/DA ratio in games.", IDC_STATIC_ABOUT, 10, 10, 180, 25
+	DEFPUSHBUTTON "&OK", 1, 80, 60, 40, 20
+	CTEXT "Created 2021 by Baltazarus.\nUse this program to calculate your\nK/D or K/DA ratio in games.", IDC_STATIC_ABOUT, 10, 10, 190, 38
 END
